@@ -1,9 +1,9 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-:root{
+:root {
   --text-color: white;
   --bg-url: url(./assets/bg-mobile.jpg);
   --stroke-color: rgba(255, 255, 255, 0.5);
@@ -13,7 +13,7 @@
   --switch-bg-url: url(./assets/moon-stars.svg);
 }
 
-.light{
+.light {
   --text-color: black;
   --bg-url: url(./assets/bg-mobile-light.jpg);
   --stroke-color: rgba(0, 0, 0, 0.5);
@@ -24,40 +24,31 @@
 }
 
 body {
-  /*
-  background-image: url(./assets/bg-mobile.jpg);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
-*/
-
-/*background: color image */
-background: var(--bg-url) no-repeat top  center/cover;
+  background: var(--bg-url) no-repeat top center/cover;
 }
-body *{
-  font-family: 'Inter', sans-serif;
+body * {
+  font-family: "Inter", sans-serif;
   color: var(--text-color);
 }
 
-#container{
+#container {
   width: 360px;
   margin: auto;
   padding-top: 0 24px;
-
 }
 
-#profile{
+#profile {
   text-align: center;
   padding: 24px;
 }
 
-#profile img{
+#profile img {
   display: block;
   width: 112px;
   margin: auto;
 }
 
-#profile p{
+#profile p {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
@@ -65,20 +56,30 @@ body *{
 }
 
 /* Switch */
-#switch{
+#switch {
   position: relative;
+  width: 64px;
+  margin: 4px auto;
 }
-#switch button{
+
+#switch button {
   width: 32px;
   height: 32px;
   background: white var(--switch-bg-url) no-repeat center;
   border: 0;
   border-radius: 50%;
   position: absolute;
+  top: 50%;
+  right: 0;
   z-index: 1;
+  transform: translateY(-50%);
 }
 
-#switch span{
+.light #switch button {
+  left: initial;
+  right: 0;
+}
+#switch span {
   display: block;
   width: 64px;
   height: 24px;
@@ -90,7 +91,7 @@ body *{
 }
 
 /*links */
-ul{
+ul {
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -98,7 +99,7 @@ ul{
   padding: 24px 0;
 }
 
-ul li a{
+ul li a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -114,13 +115,13 @@ ul li a{
 }
 
 /*pseudo-selector*/
-ul li a:hover{
+ul li a:hover {
   background: var(--suface-color-hover);
-  border: 1px solid var(--text-color);;
+  border: 1px solid var(--text-color);
 }
 
 /*Social Links*/
-#social-links{
+#social-links {
   display: flex;
   justify-content: center;
   padding: 24px 0;
@@ -135,11 +136,11 @@ ul li a:hover{
   transition: background 0.2s;
   border-radius: 50%;
 }
-#social-links a:hover{
+#social-links a:hover {
   background: var(--highlight-color);
 }
 
-footer{
+footer {
   padding: 24px;
   text-align: center;
   font-size: 14px;
