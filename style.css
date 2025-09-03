@@ -70,7 +70,6 @@ body * {
   border-radius: 50%;
   position: absolute;
   top: 50%;
-  right: 0;
   z-index: 1;
   transform: translateY(-50%);
 }
