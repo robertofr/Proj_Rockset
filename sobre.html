@@ -13,16 +13,17 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="container">
+    <div id="container-sobre">
       <div id="profile">
         <img src="/assets/avatar.png" alt="Foto de Roberto" />
-        <p>@robertofr21</p>
+        <p>Roberto Figueredo Rodrigues</p>
       </div>
       <div id="switch" onclick="toggleMode()">
         <button></button>
         <span></span>
       </div>
-      <ul>
+      
+       <ul id="sobre">
         <li>
           <a href="./sobre.html">Sobre me</a>
         </li>
@@ -36,6 +37,24 @@
           <a href="#" target="_blank">WhatsApp</a>
         </li>
       </ul>
+      <article>
+        <h1>Sobre mim</h1>
+        <p>
+          Olá! Meu nome é Roberto e sou um desenvolvedor web apaixonado por
+          tecnologia e inovação. Tenho experiência em diversas tecnologias e
+          estou sempre buscando aprender mais para aprimorar minhas habilidades.
+        </p>
+        <p>
+          Estou animado para compartilhar meus conhecimentos e projetos com
+          você! Minhas principais habilidades incluem HTML, CSS, JavaScript,
+          React, Node.js e bancos de dados como MongoDB e MySQL. Além disso,
+          tenho experiência com controle de versão usando Git e GitHub.
+        </p>
+        <p>
+         Além disso, possuo conhecimentos em metodologias ágeis, trabalho em equipe e resolução de problemas, DevOps, Docker, suporte técnico e infraestrutura de TI. Estou sempre disposto a colaborar em projetos desafiadores e contribuir para o crescimento do time.
+        </p>
+      </article>
+
       <div id="social-links">
         <a href="https://github.com/robertofr/" target="_blank">
           <ion-icon name="logo-github"></ion-icon>
@@ -52,6 +71,7 @@
       </div>
       <footer>Feito com ♥ por <a href="#" target="_blank">Robertofr</a></footer>
     </div>
+    </div>
 
     <script
       type="module"
@@ -61,7 +81,6 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
-
     <script src="script.js"></script>
   </body>
 </html>

@@ -39,6 +39,13 @@ body * {
   padding-top: 0 24px;
 }
 
+#container-sobre {
+  width: 100%;
+  max-width: 700px;
+  margin: auto;
+  padding: 0 30px;
+}
+
 #profile {
   text-align: center;
   padding: 24px;
@@ -57,6 +64,16 @@ body * {
   margin-top: 8px;
 }
 
+/* Artigo*/
+article h1 {
+  text-align: ;
+  margin: 10px 0;
+}
+article p {
+  font-family: "Inter", sans-serif;
+  text-align: justify;
+  padding-top: 10px;
+}
 /* Switch */
 #switch {
   position: relative;
@@ -77,11 +94,11 @@ body * {
   animation: slide-back 0.4s;
 }
 
-#switch button:hover{
+#switch button:hover {
   outline: 8px solid var(--highlight-color);
 }
 .light #switch button {
-animation: slide-in 0.4s forwards;
+  animation: slide-in 0.4s forwards;
 }
 #switch span {
   display: block;
@@ -151,31 +168,31 @@ footer {
 }
 
 /* media queries*/
-@media (min-width: 700px){
-  :root{
-    --bg-url: url(./assets/bg-desktop.jpg)
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/bg-desktop.jpg);
   }
 
-  .light{
-    --bg-url: url(./assets/bg-desktop-light.jpg)
+  .light {
+    --bg-url: url(./assets/bg-desktop-light.jpg);
   }
 }
 
 /* Animation */
-@keyframes slide-in{
-  from{
+@keyframes slide-in {
+  from {
     left: 0;
   }
-  to{
+  to {
     left: 50%;
   }
 }
 
-@keyframes slide-back{
-  from{
+@keyframes slide-back {
+  from {
     left: 50%;
   }
-  to{
+  to {
     left: 0;
   }
 }
