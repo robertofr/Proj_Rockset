@@ -141,6 +141,18 @@ ul li a:hover {
   border: 1px solid var(--text-color);
 }
 
+#menu {
+  display: flex;
+  flex-direction: row;
+}
+
+#menu li a {
+  /* Mantém o link como bloco para preencher o espaço do <li> */
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
 /*Social Links*/
 #social-links {
   display: flex;
